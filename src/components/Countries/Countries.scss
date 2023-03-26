@@ -1,0 +1,31 @@
+.countries-grid {
+  //   width: 100vw;
+  margin: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+@media (max-width: 1223px) {
+  .countries-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1005px) {
+  .countries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .countries-grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+
+    .country-card-dark,
+    .country-card-light {
+      margin: 0 auto;
+    }
+  }
+}

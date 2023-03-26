@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+.app-dark,
+.app-light {
+  height: 100%;
+  min-height: 100vh;
+  transition: 1s;
+}
+.app-light {
+  background-color: $veryLightGray;
+}
+
+.app-dark {
+  background-color: $veryDarkBlueDark;
+}

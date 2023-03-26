@@ -1,0 +1,64 @@
+@import ".././../../variables.scss";
+
+.dropdown-dark,
+.dropdown-light {
+  // margin-top: 20px;
+  width: 190px;
+  font-size: $mainFontSize;
+  .Dropdown-control {
+    border: none;
+    border-radius: 3px;
+    // align-items: center;
+    height: 50px;
+    padding-top: 15px;
+  }
+  .Dropdown-menu {
+    overflow: hidden;
+    border: none;
+  }
+}
+
+.dropdown-dark {
+  .Dropdown-control {
+    background-color: $darkBlue;
+    color: $white;
+    box-shadow: 0 5px 5px $darkBlue;
+  }
+
+  .Dropdown-menu {
+    background-color: $darkBlue;
+    .Dropdown-option {
+      color: $white;
+    }
+    .is-selected {
+      background-color: $darkBlue;
+    }
+    .Dropdown-option:hover,
+    .Dropdown-option:active {
+      color: $darkGray;
+      background-color: $darkBlue;
+    }
+  }
+}
+.dropdown-light {
+  color: $white;
+
+  .Dropdown-control {
+    background-color: $white;
+    -webkit-box-shadow: 0 1px 10px rgb(191, 190, 190);
+    box-shadow: 0 1px 10px rgb(191, 190, 190);
+  }
+
+  .Dropdown-menu {
+    background-color: $white;
+
+    .Dropdown-option:hover,
+    .Dropdown-option:active {
+      color: $darkGray;
+      background-color: $white;
+    }
+    .is-selected {
+      background-color: $white;
+    }
+  }
+}

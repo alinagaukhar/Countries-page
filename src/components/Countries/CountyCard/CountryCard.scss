@@ -1,0 +1,55 @@
+@import "../../../variables.scss";
+
+.country-card-dark,
+.country-card-light {
+  width: 270px;
+  height: 355px;
+  border-radius: 3px;
+  transition: scale 0.5s;
+
+  #flag {
+    width: 100%;
+    height: 170px;
+    border-radius: 3px;
+  }
+
+  .text {
+    padding: 20px;
+    line-height: 1.6em;
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 0.8rem;
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.country-card-dark {
+  background-color: $darkBlue;
+  box-shadow: 0 5px 5px $darkBlue;
+
+  .text {
+    color: $white;
+  }
+}
+
+.country-card-light {
+  background-color: $white;
+  box-shadow: 0 1px 10px rgb(191, 190, 190);
+
+  .text {
+    color: black;
+  }
+}
+
+.country-card-dark:hover,
+.country-card-light:hover {
+  cursor: pointer;
+  scale: 1.1;
+}

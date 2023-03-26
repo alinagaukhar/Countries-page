@@ -1,0 +1,12 @@
+input
+- positioning of image?
+
+
+To-do:
+
+3) fecth countries
+    - when displaying country info should check for some fields to be null
+4) single country page
+
+
+
