@@ -14,13 +14,15 @@ const Countries = () => {
   if (data) {
     if (filter === "All" || filter === null)
       displayedCountries = data.filter((country: CountryType) =>
-        country.commonName.includes(searchedCountry)
+        country.commonName.toLowerCase().includes(searchedCountry.toLowerCase())
       );
     else
       displayedCountries = data
         .filter((country: CountryType) => country.region === filter)
         .filter((country: CountryType) =>
-          country.commonName.includes(searchedCountry)
+          country.commonName
+            .toLocaleUpperCase()
+            .includes(searchedCountry.toLowerCase())
         );
   }
 

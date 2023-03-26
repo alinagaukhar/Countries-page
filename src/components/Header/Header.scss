@@ -7,6 +7,8 @@
   align-items: center;
   font-size: $mainFontSize;
   padding: 15px 50px;
+  transition: background-color ease-in-out 1s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   h1 {
     font-weight: 800;
@@ -25,7 +27,6 @@
 
 .header-dark {
   background-color: $darkBlue;
-  box-shadow: 0 5px 5px $darkBlue;
   color: $white;
   button {
     color: $white;
@@ -34,7 +35,6 @@
 
 .header-light {
   background-color: $white;
-  box-shadow: 0 1px 10px rgb(191, 190, 190);
 }
 
 @media (max-width: 768px) {
